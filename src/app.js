@@ -71,4 +71,8 @@ app.use("/api", routes);
 app.use(notFound);
 app.use(errorHandler);
 
+app.get("/", (_req, res) => {
+  res.send("Welcome! Now accessing IntellMett API server...");
+});
+
 export default app;
